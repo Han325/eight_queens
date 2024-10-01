@@ -104,7 +104,7 @@ def hill_climbing_with_restarts(max_restarts, iteration_limit):
     best_fitness = float('-inf')
     all_values = []
 
-    for restart in range(max_restarts):
+    for i in range(max_restarts):
         solution, fitness, values = hill_climbing_v2(iteration_limit)
         all_values.extend(values)
 
